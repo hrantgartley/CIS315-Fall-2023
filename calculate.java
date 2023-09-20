@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class calculate {
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
 
     }
@@ -12,7 +16,6 @@ public class calculate {
     }
 
     public String ReturnData(String data) {
-        Scanner scan = new Scanner(System.in);
         data = scan.nextLine();
         return data;
     }
