@@ -23,8 +23,4 @@ public class MyFirstCalculations {
         System.out.printf("Divide 2: %.3f\n", div2);
     }
 
-    public TestFunction name() {
-        System.out.println("Test method");
-
-    }
 }
