@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class DentalCodeInvoice {
+
+    static Scanner s = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
         System.out.print("Enter your invoice: ");
-        String choice = s.next();
-        char finalChoice = choice.charAt(0);
+        char finalChoice = getChoice();
         switch (finalChoice) {
             case 'A':
                 System.out.println("Dental Exam");
@@ -17,5 +18,12 @@ public class DentalCodeInvoice {
                 System.out.println("Refferal to speicalist");
         }
         s.close();
+    }
+
+    public static char getChoice() {
+        System.out.print("Enter your invoice: ");
+        String choice = s.next();
+        char finalChoice = choice.charAt(0);
+        return finalChoice;
     }
 }
