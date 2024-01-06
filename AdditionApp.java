@@ -21,5 +21,6 @@ public class AdditionApp {
             rollAgain = scan.next().charAt(0);
         } while (rollAgain == 'y');
         scan.close();
+
     }
 }
